@@ -1,0 +1,19 @@
+version: '3'
+services:
+  hz-ui:
+    build:
+      context: .
+    restart: always
+    container_name: hz-ui
+    image: hz-ui
+    networks:
+      - hz_default
+    external_links:
+      - hz-gateway
+    ports:
+      - 80:80
+
+# 加入到后端网络， 默认为 hz_default  | docker network ls   查看
+networks:
+  hz_default:
+    external: true
