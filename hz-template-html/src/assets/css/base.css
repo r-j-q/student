@@ -1,0 +1,617 @@
+:root {
+	--col-lightblue: #3cc5e4;
+	--text-color: #3cc5e4;
+	--col-main: #00fff7;
+}
+
+/**--------------------------------------小四角样式-----------------------------------------------------------------**/
+.border-angle {
+	background:
+		linear-gradient(to top, #3cc5e4, #3cc5e4) left top no-repeat,
+		/*上左*/
+		linear-gradient(to right, #3cc5e4, #3cc5e4) left top no-repeat,
+		/*左上*/
+		linear-gradient(to left, #3cc5e4, #3cc5e4) right top no-repeat,
+		/*上右*/
+		linear-gradient(to bottom, #3cc5e4, #3cc5e4) right top no-repeat,
+		/*上右*/
+		linear-gradient(to left, #3cc5e4, #3cc5e4) left bottom no-repeat,
+		/*下左*/
+		linear-gradient(to bottom, #3cc5e4, #3cc5e4) left bottom no-repeat,
+		/*左下*/
+		linear-gradient(to top, #3cc5e4, #3cc5e4) right bottom no-repeat,
+		/*下右*/
+		linear-gradient(to left, #3cc5e4, #3cc5e4) right bottom no-repeat;
+	/*右下*/
+	background-size: 2px 16px, 16px 2px, 2px 16px, 16px 2px;
+	background-color: rgba(197, 228, 255, 0.1);
+}
+
+/**-------------------------------------宽高100%---------------------------------------------------------------**/
+
+.w100 {
+	width: 100%;
+}
+
+.h100 {
+	height: 100%;
+}
+
+/**-------------------------------------清除浮动---------------------------------------------------------------**/
+
+.clear-fix::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+/**-------------------------------------盒子模型borderBox 溢出隐藏---------------------------------------------------------------**/
+
+.box-sizing-b {
+	box-sizing: border-box;
+}
+
+.over-hidden {
+	overflow: hidden;
+}
+
+/**-------------------------------------弹窗遮罩---------------------------------------------------------------**/
+
+.fixed-toast-container {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	overflow-y: hidden;
+	align-items: center;
+}
+
+/**-------------------------------------禁止用户勾选文本---------------------------------------------------------------**/
+
+.dis-select {
+	user-select: none;
+}
+
+/**-------------------------------------文本居中---------------------------------------------------------------**/
+
+.text-center {
+	text-align: center;
+}
+
+/**-------------------------------------字体大小,字重---------------------------------------------------------------**/
+.f12 {
+	font-size: 12px !important;
+}
+
+.f13 {
+	font-size: 13px !important;
+}
+
+.f14 {
+	font-size: 14px !important;
+}
+
+.f15 {
+	font-size: 15px !important;
+}
+
+.f16 {
+	font-size: 16px !important;
+}
+
+
+.f18 {
+	font-size: 18px !important;
+}
+
+.f20 {
+	font-size: 20px !important;
+}
+
+.f24 {
+	font-size: 24px !important;
+}
+
+.f28 {
+	font-size: 28px !important;
+}
+
+.f30 {
+	font-size: 30px !important;
+}
+
+.f32 {
+	font-size: 32px !important;
+}
+
+.f40 {
+	font-size: 40px !important;
+}
+
+.f50 {
+	font-size: 50px !important;
+}
+
+.f60 {
+	font-size: 60px !important;
+}
+
+.fw-400 {
+	font-weight: 400;
+}
+
+.fw-600 {
+	font-weight: 600;
+}
+
+/**-------------------------------------盒子边距边框---------------------------------------------------------------**/
+
+.pd-10 {
+	padding: 10px;
+}
+
+.pd-20 {
+	padding: 20px;
+}
+
+.pd-r-10 {
+	padding-right: 10px;
+}
+
+.pd-r-20 {
+	padding-right: 20px;
+}
+
+.pd-r-50 {
+	padding-right: 50px;
+}
+
+.pd-l-20 {
+	padding-left: 20px;
+}
+
+.pd-l-50 {
+	padding-left: 50px;
+}
+
+.pd-top-10 {
+	padding-top: 10px;
+}
+
+.pd-top-15 {
+	padding-top: 15px;
+}
+
+.pd-top-30 {
+	padding-top: 30px;
+}
+
+.pd-top-60 {
+	padding-top: 60px;
+}
+
+.pd-bottom-10 {
+	padding-bottom: 10px;
+}
+
+.pd-bottom-20 {
+	padding-bottom: 20px;
+}
+
+.pd-horizontal-20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.pd-horizontal-30 {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.pd-vertical-30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.pd-vertical-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.mg-10 {
+	margin: 10px;
+}
+
+.mg-20 {
+	margin: 20px;
+}
+
+.mg-r-10 {
+	margin-right: 10px;
+}
+
+.mg-r-20 {
+	margin-right: 20px;
+}
+
+.mg-b-10 {
+	margin-bottom: 10px;
+}
+
+.mg-b-20 {
+	margin-bottom: 20px;
+}
+
+.mg-b-50 {
+	margin-bottom: 50px;
+}
+
+.mg-top-60 {
+	margin-top: 60px;
+}
+
+.mg-horizontal-20 {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.br-10 {
+	border-radius: 10px;
+}
+
+.br-20 {
+	border-radius: 20px;
+}
+
+.br-30 {
+	border-radius: 30px;
+}
+
+.br-40 {
+	border-radius: 40px;
+}
+
+/**-------------------------------------颜色和背景色---------------------------------------------------------------**/
+
+.col-main {
+	color: var(--col-main) !important;
+}
+
+.col-fff {
+	color: #fff !important;
+}
+
+.col-ccc {
+	color: #ccc !important;
+}
+
+.col-999 {
+	color: #999 !important;
+}
+
+.col-666 {
+	color: #666 !important;
+}
+
+.col-333 {
+	color: #333 !important;
+}
+
+.col-000 {
+	color: #000 !important;
+}
+
+.col-red {
+	color: red !important;
+}
+
+.col-lightblue {
+	color: #3cc5e4 !important;
+}
+
+.bg-F5 {
+	background-color: #f5f5f5;
+}
+
+.bg-fff {
+	background-color: #fff;
+}
+
+.bg-000 {
+	background-color: #000;
+}
+
+.bg-lightblue {
+	background-color: var(--col-lightblue);
+}
+
+/**-------------------------------------文本移除隐藏---------------------------------------------------------------**/
+
+.limited-one {
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+
+.limited-two {
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+/**-------------------------------------flex布局---------------------------------------------------------------**/
+.fx-col-center {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.fx-start-center {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.fx-center {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.fx-end {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.fx-sb {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.fx-sa {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.fx-start {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.fx-start-wrap {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.fx-col-sb {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+.fx-col-sr {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+}
+
+.fx-col-st {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+
+.al-items-st {
+	align-items: flex-start;
+}
+
+.al-items-center {
+	align-items: center;
+}
+
+/**-------------------------------------grid布局---------------------------------------------------------------**/
+.grid-4 {
+	height: fit-content;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 20px;
+	justify-content: space-around;
+	justify-items: flex-end;
+}
+
+/**-------------------------------------定位---------------------------------------------------------------**/
+
+.pos-rel {
+	position: relative;
+}
+
+.pos-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/**-------------------------------------字体库---------------------------------------------------------------**/
+.font-family-1 {
+	text-align: center;
+	font-family: "Brush Script Std", "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;
+}
+
+/**-------------------------------------input&&button---------------------------------------------------------------**/
+.inp-200 {
+	width: 200px !important;
+	height: 40px;
+	border-radius: 4px;
+}
+
+.inp-200 .el-input__inner {
+	border-color: lightblue !important;
+	background-color: transparent !important;
+	color: #000;
+	font-size: 20px;
+}
+
+.inp-200 .el-input__inner:focus {
+	border-color: #31aeeb !important;
+	border-width: 2px;
+}
+
+.inp-label {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-150 {
+	width: 150px !important;
+}
+
+/**-------------------------------------图表样式---------------------------------------------------------------**/
+
+.chart-container {
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transform-origin: left top;
+}
+
+/**-------------------------------------去除默认样式start---------------------------------------------------------------**/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: 400;
+}
+
+address,
+cite,
+dfn,
+em,
+var,
+i {
+	font-style: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: couriernew, courier, monospace;
+}
+
+small {
+	font-size: 12px;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+	outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**-------------------------------------去除默认样式end---------------------------------------------------------------**/
+/* .scroll-y-hide {
+	overflow-y: scroll;
+	box-sizing: border-box;
+}
+
+.scroll-y-hide::-webkit-scrollbar {
+	display: none;
+}
+
+.scroll-x-hide {
+	overflow-x: scroll;
+	box-sizing: border-box;
+}
+
+.scroll-x-hide::-webkit-scrollbar {
+	display: none;
+} */
